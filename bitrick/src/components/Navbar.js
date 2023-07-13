@@ -8,7 +8,6 @@ function Navbar() {
             <NavLink exact to = "/"> Home </NavLink>
             <NavLink  to = "/music"> Music </NavLink>
             <NavLink  to = "/musicList"> MusicList </NavLink>
-
         </nav>
     </div>
   )
