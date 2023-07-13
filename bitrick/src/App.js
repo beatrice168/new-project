@@ -3,8 +3,6 @@ import Home from './components/Home';
 import Music from './components/Music';
 import MusicList from './components/MusicList';
 import {Routes, Route} from "react-router-dom"
-
-
 import './App.css';
 
 function App() {
