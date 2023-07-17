@@ -4,7 +4,7 @@ function Music() {
   const [formData, setFormData] = useState({
     artist:"",
     image:"",
-    audio:"",
+    video:"",
     genre:""
   })
   function handleChange(event){
@@ -32,7 +32,7 @@ function Music() {
         <form onSubmit={handleSubmit}>
           <input onChange={handleChange} type = "text" name= "artist" value={formData.artist} placeholder= "artist" />
           <input onChange={handleChange} type = "text" name= "image" value={formData.image} placeholder= "image" />
-          <input onChange={handleChange} type = "text" name= "audio" value={formData.audio} placeholder= "audio" />
+          <input onChange={handleChange} type = "text" name= "video" value={formData.video} placeholder= "video" />
           <input onChange={handleChange} type = "text" name= "genre" value={formData.genre} placeholder= "genre" />
           <button className='btn' type= "submit" value="music added" onClick={(e)=>alert(e.target.value)}> add Music</button>
           

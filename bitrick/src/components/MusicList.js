@@ -10,7 +10,7 @@ useEffect(() => {
     .then(data=> setData(data));
 }, []);
   const musiq = data.map((item,index)=>
-  <MusiqAlat key = {index} id = {item.id} image = {item.image} audio = {item.audio} artist = {item.artist} created_at = {item.created_at} genre = {item.genre} />
+  <MusiqAlat key = {index} id = {item.id} image = {item.image} video = {item.video} artist = {item.artist} created_at = {item.created_at} genre = {item.genre} />
 
   )
   return (

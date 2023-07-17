@@ -43,7 +43,7 @@ class Musics(Resource):
             artist= data['artist'],
             genre=data['genre'],
             image=data['image'],
-            audio=data['audio'],
+            video=data['video'],
             # created_at=data['created_at'],
       )
       

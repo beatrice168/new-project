@@ -10,7 +10,7 @@ class Music(db.Model, SerializerMixin):
     genre=db.Column(db.String)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     image=db.Column(db.String)
-    audio=db.Column(db.String)
+    video=db.Column(db.String)
     music_user=db.relationship("Music_user",backref="music")
 
     def to_dict(self):
@@ -19,7 +19,7 @@ class Music(db.Model, SerializerMixin):
             'genre': self.genre,
             'artist': self.artist,
             'image':self.image,
-            'audio':self.audio,
+            'video':self.video,
             'created_at':self.created_at,
 
         }
