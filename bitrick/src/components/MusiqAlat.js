@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MusiqAlat({ id, image, video, artist, created_at, genre }) {
+function MusiqAlat({ id, image, video, artist, created_at, genre, deleteMusiq }) {
   return (
     <div className="alert">
       <img src={image} alt="Music Image" />
@@ -18,6 +18,7 @@ function MusiqAlat({ id, image, video, artist, created_at, genre }) {
       <p>Artist: {artist}</p>
       <p>Added At: {created_at}</p>
       <p>Genre: {genre}</p>
+      <button onClick = {()=> deleteMusiq(id)}>delete</button>
     </div>
   );
 }
