@@ -22,3 +22,51 @@
   margin-left: auto;
   margin-right: auto;
 }
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  /* image-resolution: revert; */
+  background-color: rgb(5, 214, 214);
+  /* height: 50%; */
+}
+.nav{
+  text-decoration:none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  background-color: rgb(5, 214, 214);
+  height: 30px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+
+}
+.van1{
+  text-decoration: none;
+  color:aliceblue;
+  margin: 30px;
+  font-size: 20px;
+  image-resolution: 10px;
+
+}
+.hom{
+  background-color: aqua;
+}
+.youtube{
+  margin-top: 20px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex; 
+  padding: auto;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  height: 50vh;
+  width: 300px;
+}
+.alert{
+  background-image: url("https://i.pinimg.com/236x/37/85/26/3785260c5f9ace47178ce7b95ed8cff9.jpg");
+}

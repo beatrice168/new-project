@@ -6,10 +6,10 @@ class Music(db.Model, SerializerMixin):
     __tablename__="music"
     serialize_rules=("-music_user.music")
     id=db.Column(db.Integer,primary_key=True)
-    artist=db.Column(db.String)
+    # artist=db.Column(db.String)
     genre=db.Column(db.String)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
-    image=db.Column(db.String)
+    # image=db.Column(db.String)
     video=db.Column(db.String)
     music_user=db.relationship("Music_user",backref="music")
 
@@ -17,8 +17,8 @@ class Music(db.Model, SerializerMixin):
         return {
             'id': self.id,
             'genre': self.genre,
-            'artist': self.artist,
-            'image':self.image,
+            # 'artist': self.artist,
+            # 'image':self.image,
             'video':self.video,
             'created_at':self.created_at,
 
